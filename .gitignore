@@ -1,0 +1,52 @@
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+.python-version
+
+# Arquivos de ambiente com credenciais
+.env
+.env.local
+.env.*.local
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Configurações de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações específicas do usuário
+mcp_config.json
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+*.bak
+*~
+
+# Arquivos compilados
+*.so
+*.dylib
+*.dll
+*.exe

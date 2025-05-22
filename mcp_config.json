@@ -1,0 +1,32 @@
+{
+    "mcpServers": {
+        "filesystem": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/Users/samuel/Documents"
+            ]
+        },
+        "custom_mcp_server": {
+            "command": "${MCP_PYTHON_PATH:-./venv/bin/python3}",
+            "args": [
+                "./custom_mcp_server.py"
+            ],
+            "env": {
+                "GITHUB_TOKEN": "${GITHUB_TOKEN}",
+                "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+            }
+        },
+        "brave-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+            }
+        }
+    }
+}

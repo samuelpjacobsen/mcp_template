@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "custom_mcp_server": {
+            "command": "./venv/bin/python3",
+            "args": [
+                "./custom_mcp_server.py"
+            ],
+            "env": {
+                "GITHUB_TOKEN": "seu_token_github_aqui",
+                "BRAVE_API_KEY": "sua_chave_api_brave_aqui"
+            }
+        }
+    }
+}
